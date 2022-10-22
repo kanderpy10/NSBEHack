@@ -1,10 +1,63 @@
 import React from "react";
+import earth from './earth.png'
+import flower from './flower.png'
+import protest from './protest.png'
+import protest2 from './protest2.png'
+import alien from './alien.txt'
 
 export default function ViewCapsule(input){
     let [inSearch, setSearch] = React.useState(false);
 
     function search(){
         setSearch(true)
+    }
+
+    function getdata(input){
+        switch(input){
+            case("alien"):
+                return (
+                <div className="mainbox">
+                    <div className="box">
+                        <p>
+                            This is a message from an alien, fellow humans
+                        </p>
+                    </div>
+                </div>
+                )
+            case ("earth"):
+                return (
+                <div className="mainbox">
+                    <div className="box">
+                        <p>Earth From Above</p>
+                        <img className="photo" src={earth} alt="earth"/>
+                    </div>
+                </div>
+                )
+            case ("flower"):
+                return (
+                <div className="mainbox">
+                    <div className="box">
+                        <p>Flower</p>
+                        <img className="photo" src={flower} alt="flower"/>                    
+                    </div>
+                </div>
+                )
+            case ("protest"):
+                return (
+                    <div className="mainbox">
+                        <div className="box">
+                            <p>France Inflation Protest</p>
+                            <img className="photo" src={protest} alt="protest"/>
+                        </div>
+                        <div className="box">
+                            <p>Stop Oil Protest</p>
+                            <img className="photo" src={protest2} alt="protest2"/>
+                        </div>
+                    </div>
+                    )
+            default:
+                return (<p>Nothing found for querry</p>)
+        }
     }
 
     if(inSearch){
@@ -23,8 +76,13 @@ export default function ViewCapsule(input){
                 {console.log("state" + state)}
                 {console.log("city" + city)}
                 {console.log("time" + time)}
-                <div> display it here </div>
-                <br/>
+                <h1>Result</h1>
+                <div className="bigapple">
+                    {
+                        getdata(name)
+                    }
+                </div>
+                <br/> <br />
                 <button className="button button1" onClick={() => setSearch(false)}>New Search</button>
                 <button className="button button1" onClick={() => input.setPage('home')}>Go Back</button>
             </div>

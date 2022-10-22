@@ -88,3 +88,31 @@
   margin-top: 25vh; 
   width: 100%; 
 }
+
+.box {
+  height:40vh;
+  width:50vw;
+  align-items: center;
+  /* overflow:scroll; */
+  border:1px solid black;
+}
+
+.mainbox{
+  height:40vh;
+  width:50vw;
+  align-items: center;
+  overflow:scroll;
+  border:1px solid black;
+  align-self: center;
+  left: 25vw;
+  position: relative;
+}
+
+.photo {
+  height: 25vh;
+  width: 25vw;
+}
+
+.bigapple{
+  align-items: center;
+}
