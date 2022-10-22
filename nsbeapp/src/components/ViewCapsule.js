@@ -8,8 +8,21 @@ export default function ViewCapsule(input){
     }
 
     if(inSearch){
+        
+        let date = document.getElementById("date").value;
+        let name = document.getElementById("name").value;
+        let state = document.getElementById("state").value; 
+        let city = document.getElementById("city").value; 
+        let time = document.getElementById("time").value; 
+        
         return(
+            
             <div className="viewcap">
+                {console.log("date" + date)}
+                {console.log("name" + name)}
+                {console.log("state" + state)}
+                {console.log("city" + city)}
+                {console.log("time" + time)}
                 <div> display it here </div>
                 <br/>
                 <button className="button button1" onClick={() => setSearch(false)}>New Search</button>
