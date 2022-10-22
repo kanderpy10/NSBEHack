@@ -9,7 +9,7 @@ export default function ViewCapsule(input){
 
     if(inSearch){
         return(
-            <div>
+            <div className="viewcap">
                 <div> display it here </div>
                 <br/>
                 <button className="button button1" onClick={() => setSearch(false)}>New Search</button>
@@ -19,8 +19,8 @@ export default function ViewCapsule(input){
     }
     else{
         return(
-            <div>
-                
+            <div className="viewcap" >
+                <h1>Enter Capsule</h1>
                 Enter Date: <input type={'date'} id="date"></input>
                 <br/>
                 Enter Name: <input type={'form'} id="name"></input>

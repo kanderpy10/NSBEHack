@@ -12,12 +12,11 @@ function App() {
         <h1>
           Find out what is going on in the world today!
         </h1>
-        <br/><br/>
         <button className='button button1' onClick={() => setPage('addtocapsule')}>
-          Add to the capsule
+          Add to capsule
         </button>
         <button className='button button1' onClick={() => setPage('viewcapsule')}>
-          View the capsule
+          View capsule
         </button>
         <button className='button button1' onClick={() => setPage('visualizecapsule')}>
           Vizualize Capsule
@@ -37,7 +36,7 @@ function App() {
   }
   else if (currPage === 'visualizecapsule'){
     return (
-      <VisualizeCapsule/>
+      <VisualizeCapsule setPage = {setPage}/>
     );
   }
   else{

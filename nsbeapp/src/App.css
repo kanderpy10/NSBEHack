@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  left: 0; 
+  line-height: 12vh; 
+  margin-top: 25vh; 
+  width: 100%;
 }
 
 .App-logo {
@@ -59,4 +63,28 @@
 .button1:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+.capsuleheader {
+  text-align: center;
+
+  line-height: 5vh; 
+  margin-top: 10vh; 
+  /* top: 50%;  */
+  width: 100%;
+}
+.viewcap {
+  text-align: center;
+  left: 0; 
+  line-height: 5vh; 
+  margin-top: 10vh; 
+  /* top: 50%;  */
+  width: 100%; 
+}
+.bigpapa{
+  text-align: center; 
+  left: 0; 
+  line-height: 12vh; 
+  margin-top: 25vh; 
+  width: 100%; 
 }
